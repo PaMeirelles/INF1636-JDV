@@ -32,19 +32,19 @@ public class PNVelha extends JPanel implements MouseListener {
 	}
 	
 	public void paintComponent(Graphics g) {
-		// inserir aqui os comandos iniciais padrão do método paintComponent()
+		// inserir aqui os comandos iniciais padrao do metodo paintComponent()
 		int mat[][]=ctrl.getMatriz();
 		
 		g2d.setStroke(new BasicStroke(5.0f,BasicStroke.CAP_BUTT,BasicStroke.JOIN_MITER,10.0f));
 		
-		// inserir aqui o teste do jogador da vez e a definição da cor dos segmentos de reta			
+		// inserir aqui o teste do jogador da vez e a definicao da cor dos segmentos de reta			
 		
 		// inserir aqui os comandos para desenhar os 4 segmentos de reta
 		
 		for(int i=0;i<3;i++) {
 			for(int j=0;j<3;j++) {
 				if(mat[i][j]!=0) {
-					// inserir aqui o código para definir a cor do quadrado a ser desenhado
+					// inserir aqui o codigo para definir a cor do quadrado a ser desenhado
 					// e o desenho desse quadrado
 					g2d.fill(rt);
 				}
